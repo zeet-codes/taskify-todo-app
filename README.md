@@ -1,6 +1,6 @@
 # Taskify - Your Simple & Smart To-Do App ✅
 
-Taskify is a minimal and user-friendly to-do list app built with **HTML, CSS, and JavaScript**. It helps you organize your tasks efficiently with a clean and intuitive interface.
+Taskify is a minimal and user-friendly to-do list app built with **HTML, CSS, and TypeScript**. It helps you organize your tasks efficiently with a clean and intuitive interface.
 
 ## 🚀 Features
 - 📝 **Add, Edit & Delete Tasks**  
