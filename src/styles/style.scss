@@ -1,2 +1,74 @@
 @import "variable";
 @import "reset";
+@import "mixins";
+@import "globals";
+
+// App Style
+
+.app-header {
+    .header-inner {
+        margin-block-start: var(--header-top-sp);
+        background: var(--color-neutral-900);
+        border-radius: var(--radius-lg);
+        @include flex(row, space-between, center, wrap, var(--space-4));
+        padding-inline: var(--space-5);
+        height: var(--header-height);
+
+        .left-sec {
+            @include flex(row, flex-start, center, nowrap, var(--space-4));
+        }
+
+        .right-sec {
+            @include flex(row, flex-end, center, nowrap, var(--space-4));
+        }
+
+        .task-filter {
+            @include inline-flex(row, center, center, wrap, var(--space-3));
+        }
+
+        .task-search {
+            .task-search-input {
+                background: var(--color-neutral-800);
+                padding: var(--space-2) var(--space-3);
+                font-size: var(--font-size-sm);
+                border-radius: var(--radius-lg);
+                width: 30rem;
+
+                &::placeholder {
+                    color: var(--color-neutral-500);
+                }
+            }
+        }
+    }
+}
+
+.app-content {
+    padding-block-start: var(--space-6);
+    height: calc(100% - (var(--header-height) + var(--header-top-sp)));
+
+    .container {
+        height: 100%;
+    }
+
+    .task-status {
+        --_row-gap: var(--space-6);
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: var(--_row-gap);
+        height: 100%;
+    }
+
+    .task-row {
+        .row-label {
+            margin-block-end: var(--space-3);
+            margin-inline-start: var(--space-2);
+        }
+
+        .task-lists {
+            background: var(--color-neutral-900);
+            padding: var(--space-4);
+            border-radius: var(--radius-lg);
+            height: 100%;
+        }
+    }
+}

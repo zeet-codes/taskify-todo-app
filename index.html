@@ -11,17 +11,111 @@
             name="description"
             content="Taskify - A simple and smart to-do app to organize your daily tasks efficiently. Add, edit, complete, and manage your tasks with ease. Try Taskify now!"
         />
-        <title>Taskify - Your Simple & Smart To-Do App ✅</title>
+        <title>Taskify - Your Simple &amp; Smart To-Do App ✅</title>
     </head>
     <body>
-        <h1>Taskify - Your Simple & Smart To-Do App ✅</h1>
-        <select id="theme-select">
-            <option value="light">Light</option>
-            <option value="dark">Dark</option>
-            <option value="system">System</option>
-        </select>
+        <!-- App Header -->
+        <header class="app-header">
+            <div class="container">
+                <div class="header-inner">
+                    <div class="left-sec">
+                        <!-- Taskify Logo  -->
+                        <div class="app-logo">✅ Taskify</div>
 
-        <button id="clear-btn">Clear Local Data</button>
+                        <!-- Theme Select  -->
+                        <select id="theme-select">
+                            <option value="light">Light</option>
+                            <option value="dark">Dark</option>
+                            <option value="system">System</option>
+                        </select>
+                    </div>
+
+                    <div class="right-sec">
+                        <!-- Task Searchbar -->
+                        <div class="task-search">
+                            <input
+                                type="text"
+                                placeholder="Search your task here..."
+                                id="task-search-input"
+                                class="task-search-input"
+                            />
+                        </div>
+
+                        <!-- Task Filter -->
+                        <div class="task-filter">
+                            <label for="filter-task">Filter by </label>
+                            <select id="filter-task">
+                                <option value="name">Name</option>
+                                <option value="description">Description</option>
+                                <option value="start-date">Start Date</option>
+                                <option value="due-date">Due Date</option>
+                            </select>
+                        </div>
+
+                        <!-- Add Task Button -->
+                        <div class="add-task">
+                            <button id="add-task-btn">Add Task</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- App Content -->
+        <main class="app-content">
+            <div class="container">
+                <!-- Tasks Status -->
+                <div class="task-status">
+                    <!-- Todo Tasks -->
+                    <div class="task-row todo" id="todo-task">
+                        <div class="row-label">
+                            <div class="label-title">Todo</div>
+                        </div>
+                        <div class="task-lists">
+                            <div class="task-box">Todo Task 1</div>
+                            <div class="task-box">Todo Task 2</div>
+                            <div class="task-box">Todo Task 3</div>
+                            <div class="task-box">Todo Task 4</div>
+                            <div class="task-box">Todo Task 5</div>
+                        </div>
+                    </div>
+
+                    <!-- In Progress Tasks -->
+                    <div class="task-row in-progress" id="in-progress-task">
+                        <div class="row-label">
+                            <div class="label-title">In Progress</div>
+                        </div>
+                        <div class="task-lists">
+                            <div class="task-box">In Progress Task 1</div>
+                            <div class="task-box">In Progress Task 2</div>
+                            <div class="task-box">In Progress Task 3</div>
+                        </div>
+                    </div>
+
+                    <!-- Completed Tasks -->
+                    <div class="task-row completed" id="completed-task">
+                        <div class="row-label">
+                            <div class="label-title">Completed</div>
+                        </div>
+                        <div class="task-lists">
+                            <div class="task-box">Completed Task 1</div>
+                        </div>
+                    </div>
+
+                    <!-- Cancelled Tasks -->
+                    <div class="task-row cancelled" id="cancelled-task">
+                        <div class="row-label">
+                            <div class="label-title">Cancelled</div>
+                        </div>
+                        <div class="task-lists">
+                            <div class="task-box">Cancelled Task 1</div>
+                            <div class="task-box">Cancelled Task 2</div>
+                            <div class="task-box">Cancelled Task 3</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
 
         <script type="module" src="/src/scripts/main.ts"></script>
     </body>

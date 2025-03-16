@@ -3,7 +3,6 @@
     --text-color: var(--color-neutral-50);
 }
 
-
 *,
 *::before,
 *::after {
@@ -12,13 +11,11 @@
     padding: 0;
 }
 
-
 html {
     scroll-behavior: smooth;
     height: 100%;
-    font-size: 65.2%;
+    font-size: 62.5%;
 }
-
 
 body {
     min-height: 100vh;
@@ -32,10 +29,8 @@ body {
     height: 100%;
     cursor: default;
     font-size: 1.6rem;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: background-color 0.2s ease, color 0.2s ease;
 }
-
-
 
 h1,
 h2,
@@ -47,12 +42,10 @@ p {
     overflow-wrap: break-word;
 }
 
-
 ul,
 ol {
     list-style: none;
 }
-
 
 img,
 picture,
@@ -67,16 +60,15 @@ iframe {
     vertical-align: middle;
 }
 
-
 a {
     text-decoration: none;
     color: inherit;
 }
 
-
 button,
 input,
 select,
+option,
 textarea {
     font: inherit;
     color: inherit;
@@ -85,17 +77,14 @@ textarea {
     outline: none;
 }
 
-
 button {
     color: var(--text-color);
 }
-
 
 table {
     border-collapse: collapse;
     border-spacing: 0;
 }
-
 
 blockquote,
 q {
@@ -103,22 +92,20 @@ q {
 
     &:before,
     &:after {
-        content: '';
+        content: "";
         content: none;
     }
 }
 
-
-input[type='number']::-webkit-inner-spin-button,
-input[type='number']::-webkit-outer-spin-button {
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
     height: auto;
 }
 
-input[type='search']::-webkit-search-decoration {
+input[type="search"]::-webkit-search-decoration {
     -webkit-appearance: none;
 }
 
-select {
-    background: var(--background-color);
-    color: var(--text-color);
+::-webkit-scrollbar {
+    display: none;
 }

@@ -1,0 +1,14 @@
+// Container Classes
+.container {
+    max-width: 144rem;
+    margin-inline: auto;
+}
+
+select {
+    --_select-padding: var(--space-2);
+    padding: var(--_select-padding);
+    background: var(--color-neutral-800);
+    border-radius: var(--radius-lg);
+    font-size: var(--font-size-sm);
+    border-inline-end: var(--_select-padding) solid transparent;
+}
