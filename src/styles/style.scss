@@ -1,3 +1,6 @@
+// packages styles
+
+// utils styles
 @import "variable";
 @import "reset";
 @import "mixins";
@@ -74,6 +77,15 @@ body {
             padding: var(--space-4);
             border-radius: var(--radius-lg);
             height: calc(100% - var(--_row-label-height));
+
+            .simplebar {
+                height: 100%;
+                width: 100%;
+
+                .simplebar-placeholder {
+                    display: none;
+                }
+            }
         }
     }
 }
