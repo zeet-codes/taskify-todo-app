@@ -5,9 +5,13 @@
 
 // App Style
 
+body {
+    --_body-padding: var(--space-6);
+    padding: var(--_body-padding);
+}
+
 .app-header {
     .header-inner {
-        margin-block-start: var(--header-top-sp);
         background: var(--color-neutral-900);
         border-radius: var(--radius-lg);
         @include flex(row, space-between, center, wrap, var(--space-4));
@@ -43,8 +47,9 @@
 }
 
 .app-content {
-    padding-block-start: var(--space-6);
-    height: calc(100% - (var(--header-height) + var(--header-top-sp)));
+    --_app-content-top-sp: var(--space-6);
+    padding-block-start: var(--_app-content-top-sp);
+    height: calc(100% - var(--header-height));
 
     .container {
         height: 100%;
@@ -59,16 +64,16 @@
     }
 
     .task-row {
+        --_row-label-height: 4rem;
         .row-label {
-            margin-block-end: var(--space-3);
-            margin-inline-start: var(--space-2);
+            height: var(--_row-label-height);
         }
 
         .task-lists {
             background: var(--color-neutral-900);
             padding: var(--space-4);
             border-radius: var(--radius-lg);
-            height: 100%;
+            height: calc(100% - var(--_row-label-height));
         }
     }
 }
