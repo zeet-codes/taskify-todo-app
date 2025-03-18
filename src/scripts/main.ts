@@ -7,3 +7,4 @@ import "../styles/style.scss";
 
 // scripts
 import "./features/dark-mode";
+import "./features/add-task";

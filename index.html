@@ -54,7 +54,7 @@
 
                         <!-- Add Task Button -->
                         <div class="add-task">
-                            <button class="site-btn" id="add-task-btn">Add New Task</button>
+                            <button class="site-btn" id="add-task-btn">Add Task</button>
                         </div>
                     </div>
                 </div>
@@ -121,6 +121,27 @@
                 </div>
             </div>
         </main>
+
+        <!-- Add Task Modal -->
+        <div class="modal-container" id="add-task-modal">
+            <div class="modal">
+                <div class="modal-header">
+                    <h2 class="modal-title">Modal Title</h2>
+                    <button class="close-button" id="closeBtn">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <p>This is a simple modal created with HTML, CSS, and JavaScript.</p>
+                    <p>
+                        You can close it by clicking the X button, clicking outside the modal, or pressing the Escape
+                        key.
+                    </p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-secondary" id="cancelBtn">Cancel</button>
+                    <button class="btn btn-primary" id="confirmBtn">Confirm</button>
+                </div>
+            </div>
+        </div>
 
         <script type="module" src="/src/scripts/main.ts"></script>
     </body>
