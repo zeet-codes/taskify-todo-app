@@ -30,3 +30,25 @@ select {
         margin-right: -10px;
     }
 }
+
+// Button design
+
+.site-btn {
+    --_block-sp: var(--space-2);
+    --_inline-sp: var(--space-4);
+    --_btn-radius: var(--radius-lg);
+    --_btn-font-size: var(--font-size-sm);
+    --_btn-color: var(--color-indigo-600);
+    --_btn-hover-color: var(--color-indigo-700);
+    padding: var(--_block-sp) var(--_inline-sp);
+    border-radius: var(--_btn-radius);
+    background: var(--_btn-color);
+    cursor: pointer;
+    font-size: var(--_btn-font-size);
+    font-weight: 600;
+    transition: var(--transition-fast);
+
+    &:hover {
+        background: var(--_btn-hover-color);
+    }
+}
